@@ -1,0 +1,45 @@
+.home{
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 100px;
+	font-weight: 700;
+	color: black;
+}
+
+.home .wrapper{
+	/* margin: 100px; */
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home .content {
+	margin-top: 40px;
+	text-decoration: underline;
+	font-size: 150px;
+}
+
+.home .input{
+	margin-top: 40px;
+	margin: 40px auto 0;
+	width: 40%;
+	border: 1px solid black;
+	border-radius: 32px;
+	padding: 12px 32px;
+	text-align: center;
+}
+
+.home button{
+	background-color: green;
+	margin-top: 40px;
+	border-radius: 32px;
+	padding: 12px 32px;
+	color: white;
+}
