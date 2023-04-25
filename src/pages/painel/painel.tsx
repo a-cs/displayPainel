@@ -10,11 +10,11 @@ const Painel = () => {
 
 	setInterval(() => {
 		check();
-	   }, 2000);
+	   }, 100);
 
 	return (
 		<div className='painel'>
-			<h1 className='title'>Senha:</h1>
+			<h1 className='title'>Senha</h1>
 			<h1 className='content'>{painel}</h1>
 		</div>
 	);

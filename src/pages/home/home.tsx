@@ -19,9 +19,15 @@ const Home = () => {
 		setValue("")
 	}
 
+	function increaseBy(x: number) {
+		let n = Number(painel) + x
+		setPainel(String(n))
+		localStorage.setItem("painel",String(n))
+	}
+
 	setInterval(() => {
 		check();
-	   }, 2000);
+	   }, 100);
 	return (
 		<div className='home'>
 			<div className="wrapper">
@@ -32,10 +38,12 @@ const Home = () => {
 				<label className='title'>Nova senha:</label>
 				<input className='input' type="number" value={value} onChange={handleChange} />
 				<button type='submit'>Atualizar</button>
+				<button type='button' onClick={() => increaseBy(1)}>Próximo</button>
+				<button type='button' onClick={() => increaseBy(-1)}>Anterior</button>
 			</form>
 			
 		</div>
   );
 };
-  
+
 export default Home;

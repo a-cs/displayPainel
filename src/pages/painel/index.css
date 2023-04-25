@@ -1,18 +1,21 @@
 .painel{
 	width: 100vw;
 	height: 100vh;
-	background-color: white;
+	background-image: url(../../assets/background.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #212529;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 200px;
 	font-weight: 700;
-	color: black;
+	color: white;
 }
 
 .painel .content {
 	margin-top: 40px;
-	text-decoration: underline;
 	font-size: 300px;
 }
